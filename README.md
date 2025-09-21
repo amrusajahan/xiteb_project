@@ -179,12 +179,3 @@ Route names (useful for developers):
 - If you see a `RouteNotFoundException` for `login` or `register`, the project defines those routes as `login.show` and `register.show` — update any custom links accordingly.
 - Role checks are currently performed in controllers; consider adding middleware to protect role-specific routes.
 
-## Next improvements (suggested)
-
-- Add middleware for role enforcement (e.g., `EnsureRole` middleware).
-- Add Laravel Notifications or Mailables to notify users when quotations are created/responded to.
-- Persist quotation totals in the `quotations` table (add a `total` column via migration).
-- Add automated tests (feature tests) for flows: upload, create quotation, accept/reject.
-
-If you'd like, I can implement any of the suggested improvements (middleware, notifications, tests) next.
-
